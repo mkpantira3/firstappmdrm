@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:text="Do you love Shinchan?"
+        android:id="@+id/this_kitkat"
+        android:background="#106106"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="nanodayo"
+        android:onClick="doNothing"
+        android:id="@+id/this_kitkat2"
+        android:layout_toRightOf="@id/this_kitkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Oshiruko!"
+        android:onClick="doNothing"
+        android:layout_alignRight="@id/this_kitkat2"
+        android:layout_below="@id/this_kitkat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/In_name"
+        android:hint="input your name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/this_kitkat2"
+        android:textSize="20sp"                />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shinchan1"
+        android:layout_below="@id/In_name"
+        />
+
+</RelativeLayout>
